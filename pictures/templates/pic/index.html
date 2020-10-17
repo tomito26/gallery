@@ -1,0 +1,17 @@
+{% extends 'pic/base.html' %}
+
+{% block content %}
+    <div class="container pb-5">
+        <div class="row pt-5">
+            {% for photo  in photos %}
+            <div class="col-md-4 p-3">
+                <div class="card">
+                    <img src="{{photo.image.url}}" alt="Image" class="img-fluid">
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+
+{% endblock %}
